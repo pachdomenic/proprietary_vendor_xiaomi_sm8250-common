@@ -271,19 +271,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
     jcos_nq_client \
-    lib-imscmservice \
-    lib-imsdpl \
-    lib-imsqimf \
-    lib-imsrcs-v2 \
-    lib-imsrcsbaseimpl \
-    lib-imsvtcore \
-    lib-imsxml \
-    lib-rcsconfig \
-    lib-rtpcommon \
-    lib-rtpcore \
-    lib-rtpsl \
-    lib-siputility \
-    lib-uceservice \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
@@ -508,10 +495,6 @@ PRODUCT_PACKAGES += \
     capi_v2_aptX_CLHDAD_Speech_Decoder \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.wifidisplayhal@1.0 \
-    lib-imsvideocodec \
-    lib-imsvt \
-    lib-imsvtextutils \
-    lib-imsvtutils \
     libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
@@ -540,7 +523,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
-    vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.imsrtpservice@3.0 \
@@ -549,7 +531,6 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    PowerOffAlarm \
     QtiTelephonyService \
     WfdService \
     ims \
@@ -589,11 +570,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.secure_element@1.2-service \
-    ims_rtp_daemon \
-    imsdatadaemon \
-    imsqmidaemon \
-    imsrcsd \
-    irsc_util \
     ks \
     loc_launcher \
     lowi-server \
@@ -637,35 +613,33 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno_libGLESv2_adreno_symlink64 \
     libq3dtools_adreno_libq3dtools_adreno_symlink64
 
-ifneq ($(TARGET_IS_TABLET),true)
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
-
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    vendor.qti.gnss@4.0-impl \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libgnsspps \
-    libloc_api_wds \
-    libloc_socket \
-    liblocationservice \
-    liblocationservice_glue \
-    libmlipay \
-    libmlipay@1.1 \
-    libslimclient \
-    vendor.qti.gnss@4.0-service \
-    SoterService \
-    android.hardware.gnss@2.1-service-qti.xml \
-    manifest_vendor.xiaomi.hardware.mlipay.xml \
-    vendor.qti.gnss@4.0-service.xml \
-    android.hardware.gnss@2.1-service-qti \
-    mlipayd@1.1 \
-    slim_daemon
-endif
+# ifneq ($(TARGET_IS_TABLET),true)
+# PRODUCT_COPY_FILES += \
+#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
+#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
+#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
+#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
+#
+# PRODUCT_PACKAGES += \
+#     libbatching \
+#     libgeofencing \
+#     libgnss \
+#     libgnsspps \
+#     libloc_api_wds \
+#     libloc_socket \
+#     liblocationservice \
+#     liblocationservice_glue \
+#     libmlipay \
+#     libmlipay@1.1 \
+#     libslimclient \
+#     vendor.qti.gnss@4.0-service \
+#     SoterService \
+#     android.hardware.gnss@2.1-service-qti.xml \
+#     manifest_vendor.xiaomi.hardware.mlipay.xml \
+#     vendor.qti.gnss@4.0-service.xml \
+#     android.hardware.gnss@2.1-service-qti \
+#     mlipayd@1.1 \
+#     slim_daemon
+# endif
