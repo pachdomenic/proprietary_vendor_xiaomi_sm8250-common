@@ -8,18 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/sm8250-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_cangmen_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_cangmen_down.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_cangmen_up.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_cangmen_up.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_chilun_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_chilun_down.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_chilun_up.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_chilun_up.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_jijia_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_jijia_down.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_jijia_up.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_jijia_up.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_mofa_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_mofa_down.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_mofa_up.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_mofa_up.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_muqin_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_muqin_down.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_muqin_up.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_yingyan_down.ogg \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_yingyan_up.ogg \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
@@ -95,8 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
@@ -106,14 +92,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
@@ -155,6 +139,7 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
+    vendor.xiaomi.hardware.touchfeature@1.0-impl \
     vulkan.adreno \
     libC2D2 \
     libCB \
@@ -249,7 +234,6 @@ PRODUCT_PACKAGES += \
     libshoebox \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
-    android.hardware.secure_element@1.0-impl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -262,8 +246,6 @@ PRODUCT_PACKAGES += \
     deviceInfoServiceModule \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
-    vendor.qti.esepowermanager@1.1-impl \
-    vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
@@ -271,7 +253,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    jcos_nq_client \
+    lib-imscmservice \
+    lib-imsdpl \
+    lib-imsqimf \
+    lib-imsrcs-v2 \
+    lib-imsrcsbaseimpl \
+    lib-imsvtcore \
+    lib-imsxml \
+    lib-rcsconfig \
+    lib-rtpcommon \
+    lib-rtpcore \
+    lib-rtpsl \
+    lib-siputility \
+    lib-uceservice \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
@@ -397,12 +391,10 @@ PRODUCT_PACKAGES += \
     libxtadapter \
     libxtwifi_server_protocol \
     libxtwifi_server_protocol_uri_v3 \
-    ls_nq_client \
     libwvdrmengine \
     qcrild_librilutils \
     qtibus \
     qtimutex \
-    se_nq_extn_client \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hta \
@@ -420,8 +412,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory@2.3 \
     vendor.qti.data.mwqem@1.0 \
     vendor.qti.data.slm@1.0 \
-    vendor.qti.esepowermanager@1.0 \
-    vendor.qti.esepowermanager@1.1 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
@@ -429,7 +419,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@2.1 \
     vendor.qti.gnss@3.0 \
     vendor.qti.gnss@4.0 \
-    vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
@@ -496,6 +485,10 @@ PRODUCT_PACKAGES += \
     capi_v2_aptX_CLHDAD_Speech_Decoder \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.wifidisplayhal@1.0 \
+    lib-imsvideocodec \
+    lib-imsvt \
+    lib-imsvtextutils \
+    lib-imsvtutils \
     libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
@@ -534,7 +527,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     QtiTelephonyService \
     WfdService \
-    ims \
     qcrilmsgtunnel \
     WfdCommon \
     tcmclient \
@@ -561,8 +553,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
-    vendor.qti.esepowermanager@1.1-service \
-    vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.qccvndhal@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
@@ -570,7 +560,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
-    vendor.qti.secure_element@1.2-service \
+    vendor.xiaomi.hardware.touchfeature@1.0-service \
+    ims_rtp_daemon \
+    imsdatadaemon \
+    imsqmidaemon \
+    imsrcsd \
+    irsc_util \
     ks \
     loc_launcher \
     lowi-server \
@@ -584,7 +579,6 @@ PRODUCT_PACKAGES += \
     pm-proxy \
     pm-service \
     port-bridge \
-    power_off_alarm \
     qmipriod \
     qrtr-cfg \
     qrtr-lookup \
@@ -604,45 +598,4 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     xtwifi-inet-agent \
     dpmd \
-    wfdservice64 \
-    vendor.xiaomi.hardware.touchfeature@1.0-impl \
-    vendor.xiaomi.hardware.touchfeature@1.0-service \
-
-PRODUCT_PACKAGES += \
-    libEGL_adreno_libEGL_adreno_symlink32 \
-    libGLESv2_adreno_libGLESv2_adreno_symlink32 \
-    libq3dtools_adreno_libq3dtools_adreno_symlink32 \
-    libEGL_adreno_libEGL_adreno_symlink64 \
-    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
-    libq3dtools_adreno_libq3dtools_adreno_symlink64
-
-# ifneq ($(TARGET_IS_TABLET),true)
-# PRODUCT_COPY_FILES += \
-#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
-#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
-#     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
-#
-# PRODUCT_PACKAGES += \
-#     libbatching \
-#     libgeofencing \
-#     libgnss \
-#     libgnsspps \
-#     libloc_api_wds \
-#     libloc_socket \
-#     liblocationservice \
-#     liblocationservice_glue \
-#     libmlipay \
-#     libmlipay@1.1 \
-#     libslimclient \
-#     vendor.qti.gnss@4.0-service \
-#     SoterService \
-#     android.hardware.gnss@2.1-service-qti.xml \
-#     manifest_vendor.xiaomi.hardware.mlipay.xml \
-#     vendor.qti.gnss@4.0-service.xml \
-#     android.hardware.gnss@2.1-service-qti \
-#     mlipayd@1.1 \
-#     slim_daemon
-# endif
+    wfdservice64
